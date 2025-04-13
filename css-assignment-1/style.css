@@ -1,0 +1,36 @@
+.heading{
+    border-bottom: 3px solid blue;
+}
+.product-search{
+    background-color: rgb(255, 193, 79);
+    padding: 10px 20px;
+}
+
+.product-search input{
+    border: 2px solid rgb(143, 93, 0);
+}
+.product-search button {
+    background-color: rgb(255, 166, 0);
+}
+
+.table{
+    border: 1px solid rgb(0, 204, 68);
+}
+
+.table-header tr{
+    background-color: rgb(56, 228, 56);
+}
+tbody button{
+    background-color: rgb(56, 228, 56);
+}
+table{
+    border: 1px solid rgb(19, 226, 19);
+}
+
+fieldset legend{
+    background-color: rgb(233, 109, 233);
+}
+
+fieldset{
+    border: 2px solid rgb(233, 109, 233);
+}

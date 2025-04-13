@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<body>
+    <h1 class="heading"> Welcome to Tanzeel's Store </h1>
+    <div class="product-search">
+        <h2>Product Search</h2>
+        <form>
+            <input type="text" placeholder="Search over 10,000+">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    
+    <h2>Featured Products</h2>
+    <table border="1"  cellpadding="10" >
+        <thead class="table-header">
+            <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr height = '100px'>
+                <td rowspan="2"><img src="headphones.jpg" alt="Wireless Headphones" width="100"></td>
+                <td>Wireless Headphones<br>Premium noise-canceling Bluetooth headphones</td>
+                <td><s>$149.99</s><br>$129.99</td>
+                <td>In Stock</td>
+                <td><button>Add to Cart</button><br>Available quantity: 15</td>
+            </tr>
+            <tr>
+                <!-- <td colspan="4">- 40mm drivers<br>- 30-hour battery<br>- IPX4 waterproof</td> -->
+            </tr>
+            <tr height = '200px' >
+                <td rowspan="2"><img src="watch.jpg" alt="Smart Watch Pro" width="100"></td>
+                <td>Smart Watch Pro<br>Advanced fitness tracking smartwatch</td>
+                <td>$89.99</td>
+                <td>Low Stock</td>
+                <td><button>Add to Cart</button></td>
+            </tr>
+            <tr>
+                <!-- <td colspan="4">- Heart rate monitor<br>- GPS tracking<br>- Water resistant</td> -->
+            </tr>
+        </tbody>
+    </table>
+    
+    <h2>Create New Account</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            First Name: <input type="text" required> Last Name: <input type="text" required><br>
+            Date of Birth: <input type="date" required> Gender:
+            <input type="radio" name="gender" required> Male
+            <input type="radio" name="gender" required> Female
+        </fieldset>
+        <fieldset>
+            <legend>Account Details</legend>
+            Email: <input type="email" required> Password: <input type="password" required><br>
+            Phone Number: <input type="tel" required> <input type="checkbox"> Subscribe to Newsletter
+        </fieldset>
+        <fieldset>
+            <legend>Shipping Address</legend>
+            Street Address: <input type="text" required> Country: <input type="text" required> ZIP Code: <input type="text" required>
+        </fieldset>
+        <button type="submit">Create Account</button>
+        <button type="reset">Clear Form</button>
+    </form>
+
+    <h2>Product Video</h2>
+
+    <video src="./images/SampleVideo_1280x720_1mb.mp4" controls autoplay loop width="500"></video>
+
+    <h2>Product Audio</h2>
+
+    <audio src="/images/audio.mp3" controls></audio>
+
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:contact@tanzeelsstore.com">contact@tanzeelsstore.com</a></p>
+    <p>Address: <a href="https://maps.google.com?q=123+Main+Street,+Cityville">123 Main Street, Cityville</a></p>
+    <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+
+
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7235.881930581788!2d67.0182534438502!3d24.93408094639972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1743072037013!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    <br><br><br>
+
+
+    <iframe src="https://www.youtube.com/watch?v=xJjmKOCrZ4c" frameborder="2"></iframe>
+
+</body>
+</html>
