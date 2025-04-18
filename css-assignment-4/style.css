@@ -1,0 +1,26 @@
+.main-table{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main-table tr td, .main-table tr th{
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+
+th{
+    width: 100px;
+    background-color: rgb(66, 65, 65);
+    color: white;
+}
+#course{
+    width: 400px;
+}
+
+.main-table tr:hover{
+    background-color: rgb(226, 226, 226);
+}
