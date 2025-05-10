@@ -3,6 +3,7 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     max-width: 1600px;
     margin: 0 auto;
+    /* overflow: hidden; */
     
 }
 header{
@@ -99,6 +100,9 @@ main{
 
 aside{
     width: 350px;
+    position: sticky;
+    top: 0px;
+        
 }
 
 .left-heading{
@@ -108,12 +112,15 @@ aside{
     /* margin-top: 30px; */
     margin-left: 20px;
     padding: 20px 10px;
+  
 }
 
 .left-menu{
     display: grid;
     margin-top: 30px;
+    
 }
+
 
 .menu{
     display: flex;
@@ -144,7 +151,10 @@ section{
     padding: 0px 20px;
 }
 .story-container{
-    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    
+    /* flex-wrap: wrap; */
     grid-template-columns: repeat(4,1fr);
     grid-column-gap: 20px;
 }
@@ -173,11 +183,13 @@ section{
 }
 
 .add-post-container{
+    
+    overflow: hidden;
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     padding: 10px 20px;
     border-radius: 7px;
@@ -192,17 +204,112 @@ section{
     text-align: center;
     padding: 10px 150px;
     border-radius: 7px;
+    margin: 0px 5px;
 }
+
+.right-side{
+    margin-top: 20px;
+}
+
+
+.post-header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.post-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+
+.post-header-name{
+   
+    margin:5px 10px
+}
+
+
+#timing{
+    margin-left: 5px;
+}
+
+.post-container{
+    margin: 10px 0px;
+    
+}
+
+.post{
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px 0px;
+    box-shadow: 0px 1px 5px 1px rgb(202, 202, 202);
+}
+
+
+.post-tittle{
+   margin-left: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.post-img img{
+    width: 700px;
+    height: 500px;  
+}
+
+.like-comment{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.like{
+
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 5px;
+    
+}
+.like:hover{
+    cursor: pointer;
+    background-color: rgb(212, 211, 211);
+}
+
+
+
+
 
 @media screen and (max-width: 1200px){
     aside{
         display: none;
     }
+   
+    
+   
     
 }
 
 @media screen and (max-width: 1000px){
     .right-side{
         display: none;
+    }
+    .post-img img{
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+@media screen and (max-width: 700px){
+    
+    .hidden{
+        display: none;
+    }
+    section{
+        padding: 0px;
     }
 }
