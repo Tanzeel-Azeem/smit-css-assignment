@@ -41,7 +41,7 @@ function registerUser(event) {
         alert("User Registered Successfully");
 
         event.target.reset();
-        window.location.assign("/index.html")
+        window.location.assign("index.html")
     }
 }
 
@@ -59,7 +59,7 @@ function loginUser(event) {
         alert("loggedIn Successfully")
         localStorage.setItem("loggedInUser", JSON.stringify(existingUsers))
 
-        window.location.assign("/main-page/index.html")
+        window.location.assign("main-page/index.html")
     } else {
         alert("Invalid credentials")
     }
@@ -106,11 +106,11 @@ function togglePasswordLogin() {
 }
 
 
-function logout() {
-    localStorage.removeItem("loggedInUser");
-    alert("Logged out successfully");
-    window.location.href = "index.html";
-}
+// function logout() {
+//     localStorage.removeItem("loggedInUser");
+//     alert("Logged out successfully");
+//     window.location.href = "index.html";
+// }
 
 
 // fetch data from API and display products
